@@ -333,6 +333,7 @@ input { font-family: inherit; }
   flex-direction: column;
   gap: 8px;
 }
+.empty-state[hidden] { display: none; }
 .empty-title { font-size: 19px; font-weight: 600; letter-spacing: -0.02em; }
 .empty-sub { font-size: 14px; color: var(--muted); }
 
