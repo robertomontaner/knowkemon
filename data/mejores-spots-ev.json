@@ -1,0 +1,63 @@
+{
+  "hp": {
+    "rubi_zafiro_esmeralda": [
+      { "tipo": "salvaje", "pokemon": "Whismur", "lugar": "Túnel Rusturf", "metodo": "encuentro a pie", "porcentaje": 100, "ev": 1 }
+    ],
+    "rojo_fuego_verde_hoja": [
+      { "tipo": "entrenador", "nombre": "Ala Chica en Ruta 8 (VS Seeker)", "detalle": "2x Clefairy nivel 22, 2 EV c/u", "ev": 4 },
+      { "tipo": "salvaje", "pokemon": "Slowpoke", "lugar": "Ciudad Fucsia, Ciudad Verde, Rutas 6, 22, 23 y 25", "metodo": "surf — 100% solo en Verde Hoja", "ev": 1 }
+    ]
+  },
+  "attack": {
+    "rubi_zafiro_esmeralda": [
+      { "tipo": "salvaje", "pokemon": "Corphish", "lugar": "Ruta 102, Ruta 117 o Ciudad Petalburgo", "metodo": "caña super", "porcentaje": 100, "ev": 1 }
+    ],
+    "rojo_fuego_verde_hoja": [
+      { "tipo": "entrenador", "nombre": "Chico en Ruta 11 (VS Seeker)", "detalle": "1x Nidoran♂ nivel 18 (1 EV) + 1x Nidorino nivel 18 (2 EV)", "ev": 3 },
+      { "tipo": "entrenador", "nombre": "Pescador en Ruta 21 (VS Seeker)", "detalle": "3x Seaking nivel 28 (2 EV c/u) + 1x Goldeen nivel 28 (1 EV)", "ev": 7 }
+    ]
+  },
+  "defense": {
+    "rubi_zafiro_esmeralda": [
+      { "tipo": "salvaje", "pokemon": "Clamperl", "lugar": "Ruta 124 o Ruta 126, bajo el agua", "metodo": "buceo", "porcentaje": 65, "ev": 1 },
+      { "tipo": "salvaje", "pokemon": "Geodude / Graveler / Torkoal", "lugar": "Escondite Magma", "metodo": "encuentro a pie — combinado ~100% de encontrar EV de Defensa", "porcentaje": null, "ev": "1-2", "solo_juego": "esmeralda" }
+    ],
+    "rojo_fuego_verde_hoja": [
+      { "tipo": "entrenador", "nombre": "Motociclista en Ruta 16 (VS Seeker, combate final)", "detalle": "3x Weezing nivel 48, 2 EV c/u", "ev": 6 },
+      { "tipo": "entrenador", "nombre": "Motociclista en Ruta 17 (VS Seeker)", "detalle": "2x Weezing nivel 28 (2 EV c/u) + 1x Koffing nivel 28 (1 EV)", "ev": 5 },
+      { "tipo": "entrenador", "nombre": "Otro motociclista en Ruta 17 (VS Seeker)", "detalle": "3x Koffing nivel 25 (1 EV c/u) + 2x Weezing nivel 25 (2 EV c/u)", "ev": 7 }
+    ]
+  },
+  "special_attack": {
+    "rubi_zafiro_esmeralda": [
+      { "tipo": "salvaje", "pokemon": "Numel", "lugar": "Ruta 112", "metodo": "encuentro a pie", "porcentaje": 75, "ev": 1 },
+      { "tipo": "salvaje", "pokemon": "Spinda", "lugar": "Ruta 113", "metodo": "encuentro a pie", "porcentaje": 70, "ev": 1, "solo_juego": "esmeralda" }
+    ],
+    "rojo_fuego_verde_hoja": [
+      { "tipo": "entrenador", "nombre": "Ingeniero en Ruta 11 (VS Seeker, combate final)", "detalle": "3x Magneton nivel 28, 2 EV c/u", "ev": 6 },
+      { "tipo": "entrenador", "nombre": "Excursionista en Ruta 15 (VS Seeker)", "detalle": "1x Gloom nivel 28 (2 EV) + 2x Oddish nivel 28 (1 EV c/u)", "ev": 4 },
+      { "tipo": "salvaje", "pokemon": "Gastly / Haunter", "lugar": "Torre Pokémon", "metodo": "encuentro a pie — casi el único encuentro del área además de Cubone (raro)", "ev": "1-2" },
+      { "tipo": "salvaje", "pokemon": "Psyduck", "lugar": "Ciudad Fucsia, Ciudad Verde, Rutas 6, 22, 23 y 25", "metodo": "surf — 100% solo en Rojo Fuego", "ev": 1 }
+    ]
+  },
+  "special_defense": {
+    "rubi_zafiro_esmeralda": [
+      { "tipo": "salvaje", "pokemon": "Tentacool", "lugar": "Barco Abandonado", "metodo": "surf", "porcentaje": 99, "ev": 1 },
+      { "tipo": "salvaje", "pokemon": "Tentacruel", "lugar": "Barco Abandonado", "metodo": "surf", "porcentaje": 1, "ev": 2 }
+    ],
+    "rojo_fuego_verde_hoja": [
+      { "tipo": "entrenador", "nombre": "Dama Aroma en Entrada del Cañón, Isla Siete (VS Seeker)", "detalle": "2x Bellossom nivel 50, 3 EV c/u", "ev": 6 },
+      { "tipo": "salvaje", "pokemon": "Tentacool / Tentacruel", "lugar": "La mayoría de rutas y ciudades costeras", "metodo": "surf", "ev": "1-2" }
+    ]
+  },
+  "speed": {
+    "rubi_zafiro_esmeralda": [
+      { "tipo": "salvaje", "pokemon": "Wingull", "lugar": "Ruta 104", "metodo": "surf", "porcentaje": 95, "ev": 1 }
+    ],
+    "rojo_fuego_verde_hoja": [
+      { "tipo": "entrenador", "nombre": "Excursionista en Ruta 13 (VS Seeker, combate final)", "detalle": "1x Pidgeot + 1x Raichu (3 EV c/u) + 1x Raticate + 2x Persian (2 EV c/u), todos nivel 52", "ev": 12, "nota": "Rinde mucho pero los niveles altos lo hacen más difícil" },
+      { "tipo": "entrenador", "nombre": "Excursionista (otra) en Ruta 13 (VS Seeker)", "detalle": "2x Pidgey (1 EV c/u) + 1x Pidgeotto (2 EV) + 1x Meowth (1 EV), nivel 27", "ev": 5 },
+      { "tipo": "salvaje", "pokemon": "Pidgey / Rattata", "lugar": "Ruta 1", "metodo": "encuentro a pie — 100% combinado", "ev": 1 }
+    ]
+  }
+}

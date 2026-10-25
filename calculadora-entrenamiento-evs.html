@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knowkemon — Puntos de esfuerzo de Hoenn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+  <div class="card-shell">
+
+    <div class="stripe">
+      <span style="background: oklch(0.68 0.16 25)"></span>
+      <span style="background: oklch(0.68 0.16 55)"></span>
+      <span style="background: oklch(0.68 0.16 95)"></span>
+      <span style="background: oklch(0.68 0.16 160)"></span>
+      <span style="background: oklch(0.68 0.16 255)"></span>
+      <span style="background: oklch(0.68 0.16 320)"></span>
+    </div>
+
+    <div class="layout">
+
+      <aside class="sidebar">
+
+        <div class="brand">
+          <div class="brand-row">
+            <span class="brand-dot"><span></span></span>
+            <h1>know<span>kemon</span></h1>
+          </div>
+          <p class="brand-sub">Puntos de esfuerzo de Hoenn</p>
+          <p class="brand-desc">Qué estadística sube cada especie al derrotarla, y dónde encontrarla en cada juego de 3ª generación.</p>
+        </div>
+
+        <input id="search-input" type="text" placeholder="Buscar nombre o ruta…" autocomplete="off">
+
+        <div class="filter-group">
+          <span class="filter-label">EV que otorga</span>
+          <div id="stat-chips" class="stat-chip-list"></div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">Tipo</span>
+          <div id="type-chips" class="type-chip-list"></div>
+        </div>
+
+        <div class="remember">
+          <span class="remember-title">Recuerda</span>
+          <span class="remember-body">Con Cinta Fuerza los EV se duplican, y las Zapatillas Macho suben Velocidad. Tope: 255 por estadística.</span>
+        </div>
+
+        <button id="reset-btn" class="reset-btn">Quitar filtros</button>
+
+      <a href="entrenamiento.html" class="train-link">Dónde entrenar EVs →</a>
+
+      </aside>
+
+      <main class="main">
+        <div class="main-header">
+          <span id="titulo" class="main-title">Todas las especies</span>
+          <span id="conteo" class="main-count">Cargando…</span>
+        </div>
+
+        <div class="main-body">
+          <div id="grid" class="grid"></div>
+
+          <div id="empty-state" class="empty-state" hidden>
+            <span class="empty-title">Sin resultados</span>
+            <span class="empty-sub">prueba con otro nombre, tipo, ruta o juego</span>
+          </div>
+
+          <p class="footnote">Rojo Fuego · Verde Hoja · Rubí · Zafiro · Esmeralda. Ubicaciones principales de cada especie; algunas varían según el juego.</p>
+
+          <p class="disclaimer">Knowkemon es un proyecto de fan y no está afiliado a Nintendo, Game Freak ni The Pokémon Company. Pokémon y los nombres de personajes son marcas registradas de sus respectivos dueños. <a href="transparencia.html">Política de transparencia →</a></p>
+        </div>
+      </main>
+
+    </div>
+  </div>
+</div>
+
+<template id="card-template">
+  <div class="mon-card">
+    <div class="mon-ev">
+      <span class="mon-ev-num"></span>
+      <span class="mon-ev-label"></span>
+    </div>
+    <div class="mon-info">
+      <div class="mon-heading">
+        <h2 class="mon-name"></h2>
+        <span class="mon-types"></span>
+      </div>
+      <span class="mon-places"></span>
+    </div>
+  </div>
+</template>
+
+<script src="script-practice.js"></script>
+</body>
+</html>

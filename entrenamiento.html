@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knowkemon — Dónde entrenar EVs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="entrenamiento.css">
+</head>
+<body>
+
+<div class="page">
+  <div class="mini-shell">
+
+    <div class="stripe">
+      <span style="background: oklch(0.68 0.16 25)"></span>
+      <span style="background: oklch(0.68 0.16 55)"></span>
+      <span style="background: oklch(0.68 0.16 95)"></span>
+      <span style="background: oklch(0.68 0.16 160)"></span>
+      <span style="background: oklch(0.68 0.16 255)"></span>
+      <span style="background: oklch(0.68 0.16 320)"></span>
+    </div>
+
+    <div class="mini-body">
+
+      <div class="mini-header">
+        <a href="calculadora-entrenamiento-evs.html" class="back-link">← knowkemon</a>
+        <h1>Dónde entrenar EVs</h1>
+        <p class="mini-desc">Los mejores lugares para subir cada estadística por combate, en Rubí/Zafiro/Esmeralda y en Rojo Fuego/Verde Hoja.</p>
+      </div>
+
+      <div class="mini-controls">
+        <div id="mini-stat-chips" class="stat-chip-list horizontal"></div>
+        <div id="mini-game-toggle" class="game-toggle"></div>
+      </div>
+
+      <div id="mini-list" class="mini-list"></div>
+
+      <p class="footnote">Fuente: guías de entrenamiento de EVs de Marriland.com. Los porcentajes son tasas de encuentro sin objetos ni bonificadores; con Cinta Fuerza y/o Pokérus los EV ganados se duplican o cuadruplican.</p>
+
+      <p class="disclaimer">Knowkemon es un proyecto de fan y no está afiliado a Nintendo, Game Freak ni The Pokémon Company. <a href="transparencia.html">Política de transparencia →</a></p>
+
+    </div>
+  </div>
+</div>
+
+<template id="spot-template">
+  <div class="spot-card">
+    <div class="spot-badge">
+      <span class="spot-ev"></span>
+      <span class="spot-ev-label">EV</span>
+    </div>
+    <div class="spot-info">
+      <div class="spot-heading">
+        <span class="spot-name"></span>
+        <span class="spot-tag"></span>
+      </div>
+      <span class="spot-detail"></span>
+      <span class="spot-note"></span>
+    </div>
+  </div>
+</template>
+
+<script src="entrenamiento.js"></script>
+</body>
+</html>

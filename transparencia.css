@@ -1,0 +1,31 @@
+.policy {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.policy section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.policy h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.policy p {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.65;
+  color: oklch(0.4 0.02 264);
+}
+
+.policy a {
+  font-weight: 600;
+}
