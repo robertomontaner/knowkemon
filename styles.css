@@ -366,7 +366,39 @@ input { font-family: inherit; }
 @media (max-width: 760px) {
   .page { padding: 0; }
   .card-shell { border-radius: 0; }
-  .layout { grid-template-columns: 1fr; }
+  .layout { grid-template-columns: minmax(0, 1fr); }
   .sidebar { border-right: none; border-bottom: 1px solid var(--line); }
   .main-header, .main-body { padding-left: 18px; padding-right: 18px; }
+
+  /* Lateral compacto para que las tarjetas salgan antes */
+  .sidebar {
+    padding: 20px 18px 16px;
+    gap: 14px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .sidebar > * { flex: 1 1 100%; min-width: 0; }
+  .brand { gap: 6px; }
+  .brand h1 { font-size: 24px; }
+  .brand-desc, .remember { display: none; }
+  .filter-group { gap: 7px; }
+
+  .stat-chip-list { flex-direction: row; flex-wrap: wrap; }
+  .stat-chip-list .chip-stat { width: auto; padding: 7px 11px; gap: 7px; }
+
+  /* Tipos en una fila deslizable */
+  .type-chip-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 -18px;
+    padding: 0 18px 2px;
+    scrollbar-width: none;
+  }
+  .type-chip-list::-webkit-scrollbar { display: none; }
+  .type-chip-list .chip-type { flex: 0 0 auto; }
+
+  .sidebar > .reset-btn,
+  .sidebar > .train-link { flex: 0 0 auto; }
+  .sidebar > .train-link { margin-left: auto; }
 }
