@@ -89,6 +89,14 @@ async function loadData() {
       if (!respuesta.ok) throw new Error(`RESPUESTA CÓDIGO ${respuesta.status}`);
       const datos = await respuesta.json();
       state.data = datos;
+      state.data.forEach(p => {
+        if (!p.ubicaciones) { p._buscable = ''; return; }
+        const nombres = new Set();
+        Object.values(p.ubicaciones).forEach(entradas => {
+          entradas.forEach(e => nombres.add(traducirLugar(e.lugar)));
+        });
+        p._buscable = norm([...nombres].join(' '));
+      });
   } catch (err) {
     console.error('No se pudieron cargar los datos:', err);
     els.conteo.textContent = 'Error al cargar los datos';
