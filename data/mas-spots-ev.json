@@ -1,0 +1,939 @@
+{
+  "hp": {
+    "rubi_zafiro_esmeralda": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Marill",
+        "lugar": "Ciudad Petalburgo",
+        "metodo": "surf",
+        "ev": 2,
+        "porcentaje": 100,
+        "ev_por_combate": 2
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Marill",
+        "lugar": "Ruta 102, Ruta 111, Ruta 114, Ruta 117 y Ruta 120",
+        "metodo": "surf",
+        "ev": 2,
+        "porcentaje": 99,
+        "ev_por_combate": 1.98
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Wooper / Marill / Quagsire",
+        "lugar": "Zona Safari (ampliación sur)",
+        "metodo": "surf",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.4,
+        "solo_juego": "Esmeralda"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Barboach / Whiscash",
+        "lugar": "Camino Victoria (sótano 2) y Cueva Meteoro (sótano 1)",
+        "metodo": "caña super",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.2
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Ditto / Whismur / Loudred",
+        "lugar": "Paso Subterráneo del Desierto",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.16,
+        "solo_juego": "Esmeralda"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Wailmer",
+        "lugar": "Ciudad Portual, Cueva Litoral (marea alta), Cueva Submarina, Pueblo Azuliza, Ruta 105 y 8 más",
+        "metodo": "caña super",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Barboach",
+        "lugar": "Ruta 111, Ruta 114 y Ruta 120",
+        "metodo": "caña super",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Wynaut",
+        "lugar": "Isla Espejismo y Ruta 130",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      }
+    ],
+    "rojo_fuego_verde_hoja": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Wooper / Marill",
+        "lugar": "Valle de las Ruinas",
+        "metodo": "surf",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 2
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Wooper / Marill / Slowpoke",
+        "lugar": "Isla Cuarta",
+        "metodo": "surf",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.7,
+        "nota": "Rojo Fuego 70% · Verde Hoja 100%"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Dunsparce",
+        "lugar": "Puerto de las Tres Islas",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Slowpoke",
+        "lugar": "Ruta 6, Ruta 22, Ruta 23, Ruta 25 y Zona Safari (zona 1 este)",
+        "metodo": "surf",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1,
+        "solo_juego": "Verde Hoja"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Slowpoke",
+        "lugar": "Ciudad Azulona",
+        "metodo": "surf",
+        "ev": 1,
+        "porcentaje": 99,
+        "ev_por_combate": 0.99,
+        "solo_juego": "Verde Hoja"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Nidoran♀ / Nidorina / Kangaskhan",
+        "lugar": "Zona Safari (zona 1 este)",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 34,
+        "ev_por_combate": 0.48,
+        "solo_juego": "Verde Hoja"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Grimer / Ditto / Muk",
+        "lugar": "Mansión Pokémon (sótano 1)",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 45,
+        "ev_por_combate": 0.45,
+        "solo_juego": "Verde Hoja"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Caterpie",
+        "lugar": "Bosque Verde",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 40,
+        "ev_por_combate": 0.4
+      }
+    ]
+  },
+  "attack": {
+    "rubi_zafiro_esmeralda": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Carvanha / Sharpedo",
+        "lugar": "Ruta 118",
+        "metodo": "caña super",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.4
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Goldeen / Seaking",
+        "lugar": "Zona Safari (zona NO, bici carrera)",
+        "metodo": "caña super",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.2
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Carvanha",
+        "lugar": "Ruta 119",
+        "metodo": "caña super",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Shuppet",
+        "lugar": "Monte Pírico (planta 1)",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1,
+        "solo_juego": "Zafiro y Esmeralda"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Mightyena / Poochyena / Absol",
+        "lugar": "Ruta 120",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 58,
+        "ev_por_combate": 0.96,
+        "solo_juego": "Esmeralda"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Shuppet / Poochyena / Mightyena",
+        "lugar": "Ruta 121 y Ruta 123",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 70,
+        "ev_por_combate": 0.9,
+        "solo_juego": "Zafiro y Esmeralda",
+        "nota": "Zafiro 30% · Esmeralda 70%"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Sharpedo",
+        "lugar": "Ciudad Algaria, Pueblo Pacifiolog, Ruta 103, Ruta 122, Ruta 124 y 9 más",
+        "metodo": "caña super",
+        "ev": 2,
+        "porcentaje": 40,
+        "ev_por_combate": 0.8
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Solrock / Bagon",
+        "lugar": "Cueva Meteoro (fondo, sala pequeña)",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 50,
+        "ev_por_combate": 0.75,
+        "nota": "Rubí 50% · Zafiro 25% · Esmeralda 50%"
+      }
+    ],
+    "rojo_fuego_verde_hoja": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Goldeen / Seaking / Gyarados",
+        "lugar": "Bosque de las Bayas y Ciudad Fucsia",
+        "metodo": "caña super",
+        "ev": "1-2",
+        "porcentaje": 95,
+        "ev_por_combate": 1.5
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Goldeen / Seaking / Dratini y más",
+        "lugar": "Zona Safari (zona 1 este)",
+        "metodo": "caña super",
+        "ev": "1-2",
+        "porcentaje": 96,
+        "ev_por_combate": 1.37
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Krabby / Gyarados / Kingler",
+        "lugar": "Camino Kindle, Playa del Tesoro, Puente del Vínculo, Ruta marina 19, Ruta marina 20 y 1 más",
+        "metodo": "caña super",
+        "ev": "1-2",
+        "porcentaje": 99,
+        "ev_por_combate": 1.18,
+        "solo_juego": "Verde Hoja"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Krabby / Gyarados",
+        "lugar": "Ciudad Celeste, Ruta 4, Ruta 10, Ruta 11, Ruta 12 y 2 más",
+        "metodo": "caña super",
+        "ev": "1-2",
+        "porcentaje": 99,
+        "ev_por_combate": 1.14,
+        "solo_juego": "Verde Hoja"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Krabby / Gyarados",
+        "lugar": "Islas Cangrejo (sótano 3)",
+        "metodo": "caña super",
+        "ev": "1-2",
+        "porcentaje": 96,
+        "ev_por_combate": 1.12,
+        "solo_juego": "Verde Hoja"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Paras",
+        "lugar": "Monte Luna (sótano 1)",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Unown",
+        "lugar": "Cámara Dilford, Cámara Liptoo, Cámara Monean, Cámara Rixy, Cámara Scufib y 2 más",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Parasect / Primeape / Machoke",
+        "lugar": "Cueva Celeste (planta 1)",
+        "metodo": "encuentro a pie",
+        "ev": 2,
+        "porcentaje": 46,
+        "ev_por_combate": 0.92
+      }
+    ]
+  },
+  "defense": {
+    "rubi_zafiro_esmeralda": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Graveler / Geodude",
+        "lugar": "Camino Victoria (sótano 1)",
+        "metodo": "golpe roca",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.7
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Geodude / Nosepass",
+        "lugar": "Cueva Granito (sótano 2)",
+        "metodo": "golpe roca",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Geodude",
+        "lugar": "Ruta 111, Ruta 114 y Zona Safari (zona NE, bici acrobática)",
+        "metodo": "golpe roca",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Mawile / Sableye / Lairon",
+        "lugar": "Camino Victoria (sótano 2)",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 65,
+        "ev_por_combate": 0.9,
+        "nota": "Rubí 50% · Zafiro 50% · Esmeralda 65%"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Koffing / Torkoal",
+        "lugar": "Camino Ardiente",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 43,
+        "ev_por_combate": 0.61,
+        "nota": "Rubí 43% · Zafiro 20% · Esmeralda 43%"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Aron / Mawile / Sableye",
+        "lugar": "Cueva Granito (sótano 2)",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 60,
+        "ev_por_combate": 0.6
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Sandshrew",
+        "lugar": "Torre Espejismo",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 50,
+        "ev_por_combate": 0.5,
+        "solo_juego": "Esmeralda"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Mawile / Sableye / Dusclops",
+        "lugar": "Pilar Celeste (planta 1)",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 45,
+        "ev_por_combate": 0.45,
+        "nota": "Rubí 45% · Zafiro 30% · Esmeralda 30%"
+      }
+    ],
+    "rojo_fuego_verde_hoja": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Geodude / Graveler",
+        "lugar": "Camino Kindle, Cañón Sevault, Cueva Celeste (planta 1), Monte Ember (cueva tras el Team Rocket) y Túnel Roca (sótano 1)",
+        "metodo": "golpe roca",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.35
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Tangela",
+        "lugar": "Ruta marina 21",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Geodude",
+        "lugar": "Monte Ember (sótano 1)",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 70,
+        "ev_por_combate": 0.7
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Onix / Geodude / Marowak y más",
+        "lugar": "Camino Victoria (planta 1)",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 60,
+        "ev_por_combate": 0.7,
+        "nota": "Rojo Fuego 55% · Verde Hoja 60%"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Slowbro",
+        "lugar": "Cueva Celeste (planta 1)",
+        "metodo": "surf",
+        "ev": 2,
+        "porcentaje": 35,
+        "ev_por_combate": 0.7,
+        "solo_juego": "Verde Hoja"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Geodude / Cubone / Marowak y más",
+        "lugar": "Cañón Sevault",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 50,
+        "ev_por_combate": 0.65,
+        "nota": "Rojo Fuego 50% · Verde Hoja 45%"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Kakuna / Metapod",
+        "lugar": "Arbusto del Patrón",
+        "metodo": "encuentro a pie",
+        "ev": 2,
+        "porcentaje": 25,
+        "ev_por_combate": 0.5
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Exeggcute / Rhyhorn / Parasect",
+        "lugar": "Zona Safari (centro)",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 45,
+        "ev_por_combate": 0.45
+      }
+    ]
+  },
+  "special_attack": {
+    "rubi_zafiro_esmeralda": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Psyduck / Golduck",
+        "lugar": "Zona Safari (zona NO, bici carrera)",
+        "metodo": "surf",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.05
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Oddish / Girafarig / Natu y más",
+        "lugar": "Zona Safari (SE)",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 75,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Oddish / Roselia",
+        "lugar": "Ruta 117",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 40,
+        "ev_por_combate": 0.7
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Lunatone",
+        "lugar": "Cueva Meteoro (sótano 1)",
+        "metodo": "encuentro a pie",
+        "ev": 2,
+        "porcentaje": 35,
+        "ev_por_combate": 0.7,
+        "solo_juego": "Zafiro"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Remoraid / Octillery",
+        "lugar": "Zona Safari (ampliación sur)",
+        "metodo": "caña super",
+        "ev": 1,
+        "porcentaje": 60,
+        "ev_por_combate": 0.6,
+        "solo_juego": "Esmeralda"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Numel",
+        "lugar": "Paso Escarpado",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 55,
+        "ev_por_combate": 0.55
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Magnemite / Magneton",
+        "lugar": "Nueva Mauville",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 50,
+        "ev_por_combate": 0.51
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Numel / Slugma",
+        "lugar": "Camino Ardiente",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 40,
+        "ev_por_combate": 0.4
+      }
+    ],
+    "rojo_fuego_verde_hoja": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Psyduck / Golduck",
+        "lugar": "Bosque de las Bayas, Cabo Brink y Cueva Celeste (planta 1)",
+        "metodo": "surf",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.05,
+        "solo_juego": "Rojo Fuego"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Psyduck",
+        "lugar": "Ruta 6, Ruta 22, Ruta 23, Ruta 25 y Zona Safari (zona 1 este)",
+        "metodo": "surf",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1,
+        "solo_juego": "Rojo Fuego"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Slugma",
+        "lugar": "Monte Ember (sótano 3)",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Unown",
+        "lugar": "Cámara Dilford, Cámara Liptoo, Cámara Monean, Cámara Rixy, Cámara Scufib y 2 más",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Haunter / Gastly / Misdreavus",
+        "lugar": "Cueva Perdida (salas de objetos)",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 70,
+        "ev_por_combate": 1,
+        "nota": "Rojo Fuego 50% · Verde Hoja 70%"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Psyduck",
+        "lugar": "Ciudad Azulona",
+        "metodo": "surf",
+        "ev": 1,
+        "porcentaje": 99,
+        "ev_por_combate": 0.99,
+        "solo_juego": "Rojo Fuego"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Slugma",
+        "lugar": "Monte Ember (sótano 3)",
+        "metodo": "golpe roca",
+        "ev": 1,
+        "porcentaje": 90,
+        "ev_por_combate": 0.9
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Horsea / Seadra / Psyduck",
+        "lugar": "Camino Kindle, Playa del Tesoro, Puente del Vínculo, Ruta marina 19, Ruta marina 20 y 1 más",
+        "metodo": "caña super",
+        "ev": 1,
+        "porcentaje": 85,
+        "ev_por_combate": 0.85,
+        "solo_juego": "Rojo Fuego"
+      }
+    ]
+  },
+  "special_defense": {
+    "rubi_zafiro_esmeralda": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Swablu / Lotad / Lombre",
+        "lugar": "Ruta 114",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 90,
+        "ev_por_combate": 1.1,
+        "nota": "Rubí 40% · Zafiro 80% · Esmeralda 90%"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Duskull",
+        "lugar": "Monte Pírico (planta 1)",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1,
+        "solo_juego": "Rubí"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Shuckle",
+        "lugar": "Zona Safari (ampliación norte)",
+        "metodo": "golpe roca",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1,
+        "solo_juego": "Esmeralda"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Claydol / Dusclops",
+        "lugar": "Pilar Celeste (planta 1)",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 40,
+        "ev_por_combate": 0.65,
+        "nota": "Rubí 40% · Zafiro 25% · Esmeralda 25%"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Tentacool",
+        "lugar": "Ciudad Algaria, Ciudad Calagua, Ciudad Colosalia, Ciudad Portual, Cueva Litoral (marea alta) y 27 más",
+        "metodo": "surf",
+        "ev": 1,
+        "porcentaje": 60,
+        "ev_por_combate": 0.6
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Duskull / Kecleon",
+        "lugar": "Ruta 121 y Ruta 123",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 31,
+        "ev_por_combate": 0.31,
+        "solo_juego": "Rubí"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Swablu",
+        "lugar": "Ruta 115",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 30,
+        "ev_por_combate": 0.3
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Tentacool",
+        "lugar": "Ciudad Algaria, Ciudad Calagua, Ciudad Colosalia, Ciudad Portual, Cueva Litoral (marea alta) y 27 más",
+        "metodo": "caña vieja",
+        "ev": 1,
+        "porcentaje": 30,
+        "ev_por_combate": 0.3
+      }
+    ],
+    "rojo_fuego_verde_hoja": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Tentacool / Tentacruel / Mantine",
+        "lugar": "Ruinas Tanoby y Torre de Entrenadores",
+        "metodo": "surf",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Tentacool / Tentacruel",
+        "lugar": "Camino de Agua, Camino Kindle, Isla Marginada, Isla Prima, Playa del Tesoro y 2 más",
+        "metodo": "surf",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.05
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Tentacool / Hoppip / Tentacruel",
+        "lugar": "Complejo Fabuloso, Isla Quinta, Laberinto de Agua, Pilar Conmemorativo y Pradera de las Cinco Islas",
+        "metodo": "surf",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.05
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Tentacool / Tentacruel",
+        "lugar": "Cueva Icefall (catarata)",
+        "metodo": "surf",
+        "ev": "1-2",
+        "porcentaje": 99,
+        "ev_por_combate": 1.03
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Tentacool",
+        "lugar": "Ciudad Carmín, Ciudad Celeste, Isla Canela, Pueblo Paleta, Ruta 4 y 9 más",
+        "metodo": "surf",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Hoppip",
+        "lugar": "Pilar Conmemorativo",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Seel / Dewgong",
+        "lugar": "Cueva Icefall (entrada) y Islas Cangrejo (sótano 4)",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 60,
+        "ev_por_combate": 0.8
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Seel / Dewgong",
+        "lugar": "Islas Cangrejo (sótano 3)",
+        "metodo": "surf",
+        "ev": "1-2",
+        "porcentaje": 65,
+        "ev_por_combate": 0.7
+      }
+    ]
+  },
+  "speed": {
+    "rubi_zafiro_esmeralda": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Golbat",
+        "lugar": "Camino Victoria (sótano 2)",
+        "metodo": "surf",
+        "ev": 2,
+        "porcentaje": 100,
+        "ev_por_combate": 2
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Golbat",
+        "lugar": "Cueva Meteoro (sótano 1)",
+        "metodo": "surf",
+        "ev": 2,
+        "porcentaje": 90,
+        "ev_por_combate": 1.8
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Zigzagoon / Electrike / Wingull y más",
+        "lugar": "Ruta 118",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 99,
+        "ev_por_combate": 1.19
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Zubat / Golbat",
+        "lugar": "Cueva del Origen (entrada) y Cueva Submarina",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Magikarp",
+        "lugar": "Ciudad Arrecípolis y Ruta 104",
+        "metodo": "caña buena",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Magikarp",
+        "lugar": "Ruta 104",
+        "metodo": "caña vieja",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Zubat",
+        "lugar": "Cueva Cambiante",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1,
+        "solo_juego": "Esmeralda"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Smeargle",
+        "lugar": "Cueva del Artesano",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1,
+        "solo_juego": "Esmeralda"
+      }
+    ],
+    "rojo_fuego_verde_hoja": [
+      {
+        "tipo": "salvaje",
+        "pokemon": "Poliwag / Poliwhirl",
+        "lugar": "Cabo Brink, Ciudad Verde, Cueva Celeste (planta 1), Cueva Icefall (entrada), Isla Cuarta y 5 más",
+        "metodo": "caña super",
+        "ev": "1-2",
+        "porcentaje": 80,
+        "ev_por_combate": 1.2
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Ponyta / Fearow / Spearow y más",
+        "lugar": "Monte Ember",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 80,
+        "ev_por_combate": 1.1,
+        "nota": "Rojo Fuego 80% · Verde Hoja 75%"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Diglett / Dugtrio",
+        "lugar": "Cueva Diglett",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 100,
+        "ev_por_combate": 1.05
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Ponyta / Spearow / Fearow y más",
+        "lugar": "Camino Kindle",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 85,
+        "ev_por_combate": 1.05
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Zubat",
+        "lugar": "Cueva Cambiante (a)",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Magikarp",
+        "lugar": "Bosque de las Bayas, Cabo Brink, Camino de Agua, Camino Kindle, Ciudad Azulona y 38 más",
+        "metodo": "caña vieja",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Magikarp",
+        "lugar": "Ciudad Azulona",
+        "metodo": "caña buena",
+        "ev": 1,
+        "porcentaje": 100,
+        "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Pidgey / Rattata / Weedle",
+        "lugar": "Ruta 2 (sur, hacia Ciudad Verde)",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 95,
+        "ev_por_combate": 0.95
+      }
+    ]
+  }
+}

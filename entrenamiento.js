@@ -25,6 +25,7 @@ const state = {
   stat: 'hp',
   juego: 'rubi_zafiro_esmeralda',
   data: null,
+  mas: null,
 };
 
 const els = {
@@ -39,6 +40,9 @@ async function loadData() {
     const response = await fetch('./data/mejores-spots-ev.json');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     state.data = await response.json();
+    // Zonas alternativas (generadas con tools/generar-mas-spots.mjs); opcionales
+    const resMas = await fetch('./data/mas-spots-ev.json');
+    state.mas = resMas.ok ? await resMas.json() : null;
   } catch (err) {
     console.error('No se pudieron cargar los spots de entrenamiento:', err);
     els.list.innerHTML = '<p style="font-family:\'Plus Jakarta Sans\',sans-serif;color:var(--muted);font-size:13px;">No se pudo cargar la información. Revisá que data/mejores-spots-ev.json exista.</p>';
@@ -110,7 +114,12 @@ function crearSpotCard(entrada) {
   nodo.querySelector('.spot-detail').textContent = detalle;
 
   const notas = [];
-  if (typeof entrada.porcentaje === 'number') notas.push(`${entrada.porcentaje}% de encuentro`);
+  if (typeof entrada.ev_por_combate === 'number') {
+    notas.push(`${entrada.porcentaje}% de los encuentros dan EV`);
+    notas.push(`~${entrada.ev_por_combate.toLocaleString('es')} EV por combate`);
+  } else if (typeof entrada.porcentaje === 'number') {
+    notas.push(`${entrada.porcentaje}% de encuentro`);
+  }
   if (entrada.solo_juego) notas.push(`solo en ${capitalizar(entrada.solo_juego)}`);
   if (entrada.nota) notas.push(entrada.nota);
   nodo.querySelector('.spot-note').textContent = notas.join(' · ');
@@ -122,6 +131,15 @@ function crearSpotCard(entrada) {
   return nodo;
 }
 
+function crearTituloSeccion(titulo, subtitulo) {
+  const nodo = document.createElement('div');
+  nodo.className = 'mini-section';
+  nodo.innerHTML = `<h2></h2><p></p>`;
+  nodo.querySelector('h2').textContent = titulo;
+  nodo.querySelector('p').textContent = subtitulo;
+  return nodo;
+}
+
 function capitalizar(s) {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
@@ -129,15 +147,21 @@ function capitalizar(s) {
 function render() {
   refreshChipStyles();
   const entradas = (state.data[state.stat] && state.data[state.stat][state.juego]) || [];
+  const mas = (state.mas && state.mas[state.stat] && state.mas[state.stat][state.juego]) || [];
 
   els.list.innerHTML = '';
-  if (entradas.length === 0) {
+  if (entradas.length === 0 && mas.length === 0) {
     els.list.innerHTML = '<p style="font-family:\'Plus Jakarta Sans\',sans-serif;color:var(--muted);font-size:13px;">Sin datos para esta combinación todavía.</p>';
     return;
   }
 
   const frag = document.createDocumentFragment();
+  if (entradas.length) frag.appendChild(crearTituloSeccion('Los mejores', 'Recomendados por las guías de EV training.'));
   entradas.forEach(e => frag.appendChild(crearSpotCard(e)));
+  if (mas.length) {
+    frag.appendChild(crearTituloSeccion('Más opciones', 'Otras zonas donde abundan los pokémon que dan este EV, calculadas con las tablas de encuentro de cada juego. Útiles si te pillan de camino o según lo que tengas desbloqueado (surf, cañas, golpe roca).'));
+    mas.forEach(e => frag.appendChild(crearSpotCard(e)));
+  }
   els.list.appendChild(frag);
 }
 

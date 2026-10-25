@@ -281,6 +281,25 @@ const PROPER_ES = {
   'berry-forest': 'Bosque de las Bayas',
   'artisan-cave': 'Cueva del Artesano',
   'lost-cave': 'Cueva Perdida',
+  'abandoned-ship': 'Barco Abandonado',
+  'icefall-cave': 'Cueva Icefall',
+  'pallet-town': 'Pueblo Paleta',
+  'viridian-city': 'Ciudad Verde',
+  'cerulean-city': 'Ciudad Celeste',
+  'vermilion-city': 'Ciudad Carmín',
+  'celadon-city': 'Ciudad Azulona',
+  'fuchsia-city': 'Ciudad Fucsia',
+  'cinnabar-island': 'Isla Canela',
+  'one-island': 'Isla Prima',
+  'four-island': 'Isla Cuarta',
+  'five-island': 'Isla Quinta',
+  'dewford-town': 'Pueblo Azuliza',
+  'pacifidlog-town': 'Pueblo Pacifiolog',
+  'slateport-city': 'Ciudad Portual',
+  'lilycove-city': 'Ciudad Calagua',
+  'mossdeep-city': 'Ciudad Algaria',
+  'sootopolis-city': 'Ciudad Arrecípolis',
+  'ever-grande-city': 'Ciudad Colosalia',
 };
 
 // Sufijos de tipo de asentamiento
@@ -288,6 +307,7 @@ const SUFIJOS_LUGAR = [
   { re: /^(.+)-city$/, plantilla: n => `Ciudad ${n}` },
   { re: /^(.+)-town$/, plantilla: n => `Pueblo ${n}` },
   { re: /^(.+)-island$/, plantilla: n => `Isla ${n}` },
+  { re: /^(.+)-chamber$/, plantilla: n => `Cámara ${n}` },
 ];
 
 // Traducción palabra por palabra para lo que no tenga entrada propia (respaldo)
@@ -307,7 +327,16 @@ const QUALIFIER_ES = {
   cave: 'cueva', outside: 'exterior', back: 'fondo', waterfall: 'catarata',
   underwater: 'bajo el agua', north: 'norte', south: 'sur', east: 'este',
   west: 'oeste', 'high-tide': 'marea alta', 'low-tide': 'marea baja',
-  middle: 'centro', apex: 'cima', se: 'SE', sw: 'SO', ne: 'NE', nw: 'NO',
+  middle: 'centro', expansion: 'ampliación', apex: 'cima', se: 'SE', sw: 'SO', ne: 'NE', nw: 'NO',
+  room: 'sala', towards: 'hacia',
+  // cualificadores compuestos que no se traducen bien palabra por palabra
+  '1f-cave-behind-team-rocket': 'cueva tras el Team Rocket',
+  '1fsmall-room': 'planta 1, sala pequeña',
+  'backsmall-room': 'fondo, sala pequeña',
+  'item-rooms': 'salas de objetos',
+  'neacro-bike-area': 'zona NE, bici acrobática',
+  'nwmach-bike-area': 'zona NO, bici carrera',
+  'south-towards-viridian-city': 'sur, hacia Ciudad Verde',
 };
 
 function capitalizar(palabra) {
@@ -342,6 +371,10 @@ function traducirBase(base) {
 
 function traducirCualificador(cal) {
   if (!cal) return '';
+  if (QUALIFIER_ES[cal]) return QUALIFIER_ES[cal];
+  // plantas: "1f" -> "planta 1", "b2f" -> "sótano 2"
+  const planta = cal.match(/^(b?)(\d+)f$/);
+  if (planta) return `${planta[1] ? 'sótano' : 'planta'} ${planta[2]}`;
   // separa cosas como "expansion-north" en tokens
   return cal.split('-').map(tok => QUALIFIER_ES[tok] || tok).join(' ');
 }

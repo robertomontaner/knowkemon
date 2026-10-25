@@ -18,7 +18,15 @@ calculadora-entrenamiento-evs.html  Página principal
 entrenamiento.html                  Mejores spots de entrenamiento
 transparencia.html                  Fuentes y metodología
 data/pokemon-gen3-evs.json          EVs, tipos y ubicaciones por especie
-data/mejores-spots-ev.json          Spots de entrenamiento por estadística
+data/mejores-spots-ev.json          Spots de entrenamiento recomendados (a mano)
+data/mas-spots-ev.json              Zonas alternativas (generado)
+tools/generar-mas-spots.mjs         Genera mas-spots-ev.json desde las tablas de encuentro
+```
+
+Para regenerar las zonas alternativas tras tocar los datos o las traducciones de lugares:
+
+```bash
+node tools/generar-mas-spots.mjs
 ```
 
 Sitio estático en HTML, CSS y JavaScript sin dependencias ni build.
