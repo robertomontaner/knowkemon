@@ -37,11 +37,11 @@ const els = {
 
 async function loadData() {
   try {
-    const response = await fetch('./data/mejores-spots-ev.json');
+    const response = await fetch('./data/mejores-spots-ev.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     state.data = await response.json();
     // Zonas alternativas (generadas con tools/generar-mas-spots.mjs); opcionales
-    const resMas = await fetch('./data/mas-spots-ev.json');
+    const resMas = await fetch('./data/mas-spots-ev.json', { cache: 'no-cache' });
     state.mas = resMas.ok ? await resMas.json() : null;
   } catch (err) {
     console.error('No se pudieron cargar los spots de entrenamiento:', err);

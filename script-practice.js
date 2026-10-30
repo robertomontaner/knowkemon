@@ -76,7 +76,7 @@ async function loadData() {
   // TODO (práctica): completar la carga de datos.
   //
   // Guía paso a paso en fetch-instrucciones.md, pero en resumen:
-  //   1. Haz fetch('./data/pokemon-gen3-evs.json')
+  //   1. Haz fetch('./data/pokemon-gen3-evs.json', { cache: 'no-cache' })
   //   2. Comprobá response.ok (si no, lanzá un error)
   //   3. Convertí la respuesta a JSON con response.json()
   //   4. Guardá el resultado en state.data
@@ -94,7 +94,7 @@ async function loadData() {
 
   try {
     // 1-4: tu código de fetch aquí.
-      const respuesta = await fetch('./data/pokemon-gen3-evs.json');
+      const respuesta = await fetch('./data/pokemon-gen3-evs.json', { cache: 'no-cache' });
       if (!respuesta.ok) throw new Error(`RESPUESTA CÓDIGO ${respuesta.status}`);
       const datos = await respuesta.json();
       state.data = datos;

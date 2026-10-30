@@ -73,7 +73,7 @@ const els = {
 
 async function loadData() {
   try {
-    const response = await fetch('./data/pokemon-gen3-evs.json');
+    const response = await fetch('./data/pokemon-gen3-evs.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     state.data = await response.json();
     state.data.forEach(p => {
