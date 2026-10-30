@@ -67,6 +67,8 @@ for (const p of especies) {
       if (!METODO_ES[e.metodo]) continue;
       // Cueva Cambiante (b-g) solo se activaba con eventos de Regalo Misterioso
       if (/altering-cave \([b-i]\)$/.test(e.lugar)) continue;
+      // En la Zona Safari no se puede combatir, así que no sirve para entrenar
+      if (/safari-zone/.test(e.lugar)) continue;
       const clave = `${e.lugar}|${e.metodo}`;
       const t = ((tablas[juego] ||= {})[clave] ||= { total: 0, porPokemon: {} });
       t.total += e['rareza_%'];

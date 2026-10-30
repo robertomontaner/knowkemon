@@ -22,6 +22,13 @@ const TYPE_MAP = {
   'Acero': 'steel',
 };
 
+// --- Generaciones: rango de número de Pokédex Nacional ---
+const GEN_META = [
+  { key: 1, label: '1ª gen', min: 1,   max: 151 },
+  { key: 2, label: '2ª gen', min: 152, max: 251 },
+  { key: 3, label: '3ª gen', min: 252, max: 386 },
+];
+
 // --- Juegos: orden de visualización + abreviatura para las tarjetas ---
 const GAME_META = [
   { key: 'firered',  abbr: 'RF' },
@@ -42,6 +49,7 @@ const state = {
   q: '',
   stat: null,   // clave de STAT_META o null
   tipo: null,   // etiqueta en español de TYPE_MAP o null
+  gen: null,    // clave de GEN_META o null
   data: [],     // se llena tras el fetch
 };
 
@@ -50,6 +58,7 @@ const els = {
   search: document.getElementById('search-input'),
   statChips: document.getElementById('stat-chips'),
   typeChips: document.getElementById('type-chips'),
+  genChips: document.getElementById('gen-chips'),
   reset: document.getElementById('reset-btn'),
   grid: document.getElementById('grid'),
   empty: document.getElementById('empty-state'),
@@ -105,6 +114,7 @@ async function loadData() {
   }
   buildStatChips();
   buildTypeChips();
+  buildGenChips();
   render();
 }
 
@@ -143,6 +153,21 @@ function buildTypeChips() {
   });
 }
 
+function buildGenChips() {
+  els.genChips.innerHTML = '';
+  GEN_META.forEach(g => {
+    const btn = document.createElement('button');
+    btn.className = 'chip-type';
+    btn.textContent = g.label;
+    btn.addEventListener('click', () => {
+      state.gen = state.gen === g.key ? null : g.key;
+      render();
+    });
+    btn.dataset.key = g.key;
+    els.genChips.appendChild(btn);
+  });
+}
+
 function refreshChipStyles() {
   els.statChips.querySelectorAll('.chip-stat').forEach(btn => {
     const key = btn.dataset.key;
@@ -155,6 +180,9 @@ function refreshChipStyles() {
   });
   els.typeChips.querySelectorAll('.chip-type').forEach(btn => {
     btn.classList.toggle('active', state.tipo === btn.dataset.label);
+  });
+  els.genChips.querySelectorAll('.chip-type').forEach(btn => {
+    btn.classList.toggle('active', state.gen === Number(btn.dataset.key));
   });
 }
 
@@ -403,6 +431,11 @@ function filtrar() {
       const tipoId = TYPE_MAP[state.tipo];
       if (!p.tipos.includes(tipoId)) return false;
     }
+    if (state.gen) {
+      const g = GEN_META.find(g => g.key === state.gen);
+      const n = p.national_dex_number;
+      if (n < g.min || n > g.max) return false;
+    }
     if (nq) {
       const enNombre = norm(p.name).includes(nq);
       const enLugares = p._buscable.includes(nq);
@@ -417,10 +450,15 @@ function filtrar() {
 // ------------------------------------------------------------
 
 function tituloActual(cantidadFiltrada) {
-  const { stat, tipo, q } = state;
-  if (stat && tipo) return `${STAT_META[stat].label} · tipo ${tipo}`;
-  if (stat) return `Suben ${STAT_META[stat].label}`;
-  if (tipo) return `Tipo ${tipo}`;
+  const { stat, tipo, gen, q } = state;
+  const partes = [];
+  if (stat) partes.push(`Suben ${STAT_META[stat].label}`);
+  if (tipo) partes.push(`tipo ${tipo}`);
+  if (gen) partes.push(GEN_META.find(g => g.key === gen).label);
+  if (partes.length) {
+    const titulo = partes.join(' · ');
+    return titulo.charAt(0).toUpperCase() + titulo.slice(1);
+  }
   if (q.trim()) return `Resultados de "${q.trim()}"`;
   return 'Todas las especies';
 }
@@ -484,6 +522,7 @@ els.reset.addEventListener('click', () => {
   state.q = '';
   state.stat = null;
   state.tipo = null;
+  state.gen = null;
   els.search.value = '';
   render();
 });

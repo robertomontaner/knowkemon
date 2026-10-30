@@ -21,16 +21,6 @@
       },
       {
         "tipo": "salvaje",
-        "pokemon": "Wooper / Marill / Quagsire",
-        "lugar": "Zona Safari (ampliación sur)",
-        "metodo": "surf",
-        "ev": "1-2",
-        "porcentaje": 100,
-        "ev_por_combate": 1.4,
-        "solo_juego": "Esmeralda"
-      },
-      {
-        "tipo": "salvaje",
         "pokemon": "Barboach / Whiscash",
         "lugar": "Camino Victoria (sótano 2) y Cueva Meteoro (sótano 1)",
         "metodo": "caña super",
@@ -74,6 +64,15 @@
         "ev": 1,
         "porcentaje": 100,
         "ev_por_combate": 1
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Wailmer",
+        "lugar": "Ciudad Calagua",
+        "metodo": "caña super",
+        "ev": 1,
+        "porcentaje": 85,
+        "ev_por_combate": 0.85
       }
     ],
     "rojo_fuego_verde_hoja": [
@@ -108,7 +107,7 @@
       {
         "tipo": "salvaje",
         "pokemon": "Slowpoke",
-        "lugar": "Ruta 6, Ruta 22, Ruta 23, Ruta 25 y Zona Safari (zona 1 este)",
+        "lugar": "Ruta 6, Ruta 22, Ruta 23 y Ruta 25",
         "metodo": "surf",
         "ev": 1,
         "porcentaje": 100,
@@ -123,16 +122,6 @@
         "ev": 1,
         "porcentaje": 99,
         "ev_por_combate": 0.99,
-        "solo_juego": "Verde Hoja"
-      },
-      {
-        "tipo": "salvaje",
-        "pokemon": "Nidoran♀ / Nidorina / Kangaskhan",
-        "lugar": "Zona Safari (zona 1 este)",
-        "metodo": "encuentro a pie",
-        "ev": "1-2",
-        "porcentaje": 34,
-        "ev_por_combate": 0.48,
         "solo_juego": "Verde Hoja"
       },
       {
@@ -153,6 +142,16 @@
         "ev": 1,
         "porcentaje": 40,
         "ev_por_combate": 0.4
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Slowpoke / Marill",
+        "lugar": "Cueva Icefall (entrada)",
+        "metodo": "surf",
+        "ev": "1-2",
+        "porcentaje": 35,
+        "ev_por_combate": 0.4,
+        "solo_juego": "Verde Hoja"
       }
     ]
   },
@@ -166,15 +165,6 @@
         "ev": "1-2",
         "porcentaje": 100,
         "ev_por_combate": 1.4
-      },
-      {
-        "tipo": "salvaje",
-        "pokemon": "Goldeen / Seaking",
-        "lugar": "Zona Safari (zona NO, bici carrera)",
-        "metodo": "caña super",
-        "ev": "1-2",
-        "porcentaje": 100,
-        "ev_por_combate": 1.2
       },
       {
         "tipo": "salvaje",
@@ -234,6 +224,16 @@
         "porcentaje": 50,
         "ev_por_combate": 0.75,
         "nota": "Rubí 50% · Zafiro 25% · Esmeralda 50%"
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Poochyena",
+        "lugar": "Ruta 103",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 60,
+        "ev_por_combate": 0.6,
+        "nota": "Rubí 30% · Zafiro 30% · Esmeralda 60%"
       }
     ],
     "rojo_fuego_verde_hoja": [
@@ -245,15 +245,6 @@
         "ev": "1-2",
         "porcentaje": 95,
         "ev_por_combate": 1.5
-      },
-      {
-        "tipo": "salvaje",
-        "pokemon": "Goldeen / Seaking / Dratini y más",
-        "lugar": "Zona Safari (zona 1 este)",
-        "metodo": "caña super",
-        "ev": "1-2",
-        "porcentaje": 96,
-        "ev_por_combate": 1.37
       },
       {
         "tipo": "salvaje",
@@ -311,6 +302,16 @@
         "ev": 2,
         "porcentaje": 46,
         "ev_por_combate": 0.92
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Krabby",
+        "lugar": "Camino de Agua, Camino Kindle, Complejo Fabuloso, Cueva Icefall (catarata), Isla Marginada y 10 más",
+        "metodo": "caña buena",
+        "ev": 1,
+        "porcentaje": 80,
+        "ev_por_combate": 0.8,
+        "solo_juego": "Verde Hoja"
       }
     ]
   },
@@ -337,7 +338,7 @@
       {
         "tipo": "salvaje",
         "pokemon": "Geodude",
-        "lugar": "Ruta 111, Ruta 114 y Zona Safari (zona NE, bici acrobática)",
+        "lugar": "Ruta 111 y Ruta 114",
         "metodo": "golpe roca",
         "ev": 1,
         "porcentaje": 100,
@@ -462,8 +463,8 @@
       },
       {
         "tipo": "salvaje",
-        "pokemon": "Exeggcute / Rhyhorn / Parasect",
-        "lugar": "Zona Safari (centro)",
+        "pokemon": "Geodude / Onix",
+        "lugar": "Túnel Roca (sótano 1)",
         "metodo": "encuentro a pie",
         "ev": 1,
         "porcentaje": 45,
@@ -473,24 +474,6 @@
   },
   "special_attack": {
     "rubi_zafiro_esmeralda": [
-      {
-        "tipo": "salvaje",
-        "pokemon": "Psyduck / Golduck",
-        "lugar": "Zona Safari (zona NO, bici carrera)",
-        "metodo": "surf",
-        "ev": "1-2",
-        "porcentaje": 100,
-        "ev_por_combate": 1.05
-      },
-      {
-        "tipo": "salvaje",
-        "pokemon": "Oddish / Girafarig / Natu y más",
-        "lugar": "Zona Safari (SE)",
-        "metodo": "encuentro a pie",
-        "ev": "1-2",
-        "porcentaje": 75,
-        "ev_por_combate": 1
-      },
       {
         "tipo": "salvaje",
         "pokemon": "Oddish / Roselia",
@@ -509,16 +492,6 @@
         "porcentaje": 35,
         "ev_por_combate": 0.7,
         "solo_juego": "Zafiro"
-      },
-      {
-        "tipo": "salvaje",
-        "pokemon": "Remoraid / Octillery",
-        "lugar": "Zona Safari (ampliación sur)",
-        "metodo": "caña super",
-        "ev": 1,
-        "porcentaje": 60,
-        "ev_por_combate": 0.6,
-        "solo_juego": "Esmeralda"
       },
       {
         "tipo": "salvaje",
@@ -546,6 +519,33 @@
         "ev": 1,
         "porcentaje": 40,
         "ev_por_combate": 0.4
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Oddish",
+        "lugar": "Ruta 119",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 30,
+        "ev_por_combate": 0.3
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Oddish",
+        "lugar": "Ruta 120",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 25,
+        "ev_por_combate": 0.25
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Oddish / Gloom",
+        "lugar": "Ruta 121 y Ruta 123",
+        "metodo": "encuentro a pie",
+        "ev": "1-2",
+        "porcentaje": 20,
+        "ev_por_combate": 0.25
       }
     ],
     "rojo_fuego_verde_hoja": [
@@ -562,7 +562,7 @@
       {
         "tipo": "salvaje",
         "pokemon": "Psyduck",
-        "lugar": "Ruta 6, Ruta 22, Ruta 23, Ruta 25 y Zona Safari (zona 1 este)",
+        "lugar": "Ruta 6, Ruta 22, Ruta 23 y Ruta 25",
         "metodo": "surf",
         "ev": 1,
         "porcentaje": 100,
@@ -652,16 +652,6 @@
       },
       {
         "tipo": "salvaje",
-        "pokemon": "Shuckle",
-        "lugar": "Zona Safari (ampliación norte)",
-        "metodo": "golpe roca",
-        "ev": 1,
-        "porcentaje": 100,
-        "ev_por_combate": 1,
-        "solo_juego": "Esmeralda"
-      },
-      {
-        "tipo": "salvaje",
         "pokemon": "Claydol / Dusclops",
         "lugar": "Pilar Celeste (planta 1)",
         "metodo": "encuentro a pie",
@@ -706,6 +696,16 @@
         "ev": 1,
         "porcentaje": 30,
         "ev_por_combate": 0.3
+      },
+      {
+        "tipo": "salvaje",
+        "pokemon": "Baltoy",
+        "lugar": "Ruta 111",
+        "metodo": "encuentro a pie",
+        "ev": 1,
+        "porcentaje": 24,
+        "ev_por_combate": 0.24,
+        "solo_juego": "Esmeralda"
       }
     ],
     "rojo_fuego_verde_hoja": [
@@ -910,7 +910,7 @@
       {
         "tipo": "salvaje",
         "pokemon": "Magikarp",
-        "lugar": "Bosque de las Bayas, Cabo Brink, Camino de Agua, Camino Kindle, Ciudad Azulona y 38 más",
+        "lugar": "Bosque de las Bayas, Cabo Brink, Camino de Agua, Camino Kindle, Ciudad Azulona y 37 más",
         "metodo": "caña vieja",
         "ev": 1,
         "porcentaje": 100,
